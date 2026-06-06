@@ -42,5 +42,5 @@ If you utilize this framework, reference its concepts, or build upon the mathema
   year         = {2026},
   month        = {June},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.XXXXXXX}
+  doi          = {10.5281/zenodo.20570617}
 }
