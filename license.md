@@ -1,0 +1,1 @@
+The text and theoretical framework of the Quantum Constraint Framework are licensed under the Creative Commons Attribution 4.0 International License as archived on Zenodo (DOI: 10.5281/zenodo.20570617).
