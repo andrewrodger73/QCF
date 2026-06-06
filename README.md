@@ -36,11 +36,12 @@ This equation asserts that the invariant physical quantity expressed via macrosc
 If you utilize this framework, reference its concepts, or build upon the mathematical operators outlined in the core paper, please use the following academic citation format:
 
 ```bibtex
-@artwork{rodger2026quantum,
+@misc{rodger2026quantum,
   author       = {Rodger, Andrew},
   title        = {Quantum Constraint Framework at Spacetime Singularities: A Postulate of Isomorphic Cosmic Equilibrium},
   year         = {2026},
   month        = {June},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.20570617}
+  doi          = {10.5281/zenodo.20570617},
+  url          = {https://doi.org/10.5281/zenodo.20570617}
 }
