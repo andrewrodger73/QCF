@@ -10,7 +10,7 @@ General Relativity predicts curvature divergence as $r \to 0$ in spherically sym
 This framework resolves the central singularity without altering standard external General Relativity for macroscopic black holes, offering concrete testable scaling signatures for primordial black holes (PBHs).
 
 ## Repository Contents
-* `V2.pdf` - The complete, comprehensive research paper containing full theoretical derivations, quantitative scaling tables, and phenomenology.
+* `QCF.pdf` - The complete, comprehensive research paper containing full theoretical derivations, quantitative scaling tables, and phenomenology.
 
 ## Citation
 
