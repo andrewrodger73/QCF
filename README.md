@@ -1,47 +1,31 @@
-# Quantum Constraint Framework at Spacetime Singularities
-### A Postulate of Isomorphic Cosmic Equilibrium
+# Quantum Constraint Framework (QCF)
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20570617-blue.svg)](https://doi.org/10.5281/zenodo.20570617)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20576794.svg)](https://doi.org/10.5281/zenodo.20576794)
 
+This repository contains the core codebase, mathematical verifications, and numerical scaling data for the **Quantum Constraint Framework (QCF)** at spacetime singularities, introducing the postulate of **Isomorphic Cosmic Equilibrium (ICE)**.
 
----
+## Abstract
+General Relativity predicts curvature divergence as $r \to 0$ in spherically symmetric spacetimes, while quantum unitarity forbids non-unitary loss of information. We propose the Quantum Constraint Framework (QCF), wherein the Schwarzschild radius $r_s$ acts as a thermodynamic interface. Spacetime curvature at the horizon is sourced by the coarse-grained von Neumann entropy of horizon-localized modes. The Einstein tensor at the boundary is identified with an effective quantum surface stress $\Sigma_{\mu\nu}^{QM}$ enforcing the Bekenstein entropy bound. Saturation of this informational bound yields a universal, finite curvature ceiling $K_{max} = 1/16$ in Planck units, dynamically inducing an interior spatial cutoff $r_{cut} \propto r_s^{1/3}$. 
 
-## 🌌 Overview
-The **Quantum Constraint Framework (QCF)** is a theoretical model addressing the foundational mathematical conflicts between General Relativity (GR) and Quantum Mechanics (QM) at high-density boundary layers. 
+This framework resolves the central singularity without altering standard external General Relativity for macroscopic black holes, offering concrete testable scaling signatures for primordial black holes (PBHs).
 
-Rather than attempting a traditional perturbative merging of the two domains, the QCF posits a state of structural, dualistic isomorphism. By establishing a fundamental boundary condition at the Schwarzschild event horizon, the framework models the macro-geometric continuum and micro-probabilistic state space as a perfectly balanced, closed equilibrium system.
+## Repository Contents
+* `/src` - Core scripts for computing the curvature ceiling and thermodynamic boundary conditions.
+* `/plots` - Generated scaling plots (Curvature Truncation and Cutoff Radius vs. Mass).
+* `V2.pdf` - The compiled comprehensive thesis.
 
-## 🧮 The Core Postulate
+## Citation
 
-The foundational axiom governing boundary convergence is expressed as:
+If you use this framework, equations, or data scaling models in your research, please cite the work as follows:
 
-$$\sum \left( r = \frac{2GM}{c^2} \right) = \sum QM$$
-
-This equation asserts that the invariant physical quantity expressed via macroscopic spacetime geometry at the horizon ($\sum GR$) is structurally isomorphic to the total quantum state space ($\sum QM$).
-
----
-
-## 📑 Repository Contents
-* `Quantum_Constraint_Framework.pdf`: The finalized, formatted academic pre-print.
-* `Quantum_Constraint_Framework.md`: Raw Markdown source file containing formal LaTeX equations.
-
-## 🎯 Key Themes
-* **Resolution of Singularities:** Truncation of classical infinities via continuous quantum modulation at the boundary interface.
-* **The Black Hole Information Paradox:** Enforcing strict unitary information conservation at the horizon layer.
-* **Experimental Anomalies:** Reframing localized Standard Model deviations as quantifiable indicators of latent or unmeasured dark sectors.
-
----
-
-## 📜 Citation & Intellectual Property
-If you utilize this framework, reference its concepts, or build upon the mathematical operators outlined in the core paper, please use the following academic citation format:
-
+### BibTeX
 ```bibtex
-@misc{rodger2026quantum,
+@misc{rodger2026qcf,
   author       = {Rodger, Andrew},
   title        = {Quantum Constraint Framework at Spacetime Singularities: A Postulate of Isomorphic Cosmic Equilibrium},
-  year         = {2026},
-  month        = {June},
+  month        = jun,
+  year         = 2026,
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.20570617},
-  url          = {https://doi.org/10.5281/zenodo.20570617}
+  doi          = {10.5281/zenodo.20576794},
+  url          = {[https://doi.org/10.5281/zenodo.20576794](https://doi.org/10.5281/zenodo.20576794)}
 }
