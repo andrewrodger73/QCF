@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20576794.svg)](https://doi.org/10.5281/zenodo.20576794)
 
-Status: V1.0 (June 2026) — interior regularity condition not yet satisfied. V2 in progress.
+> **Status: V1.0 (June 2026) — interior regularity condition not yet satisfied. This is a flawed first release. V2 with the corrected interior solution is in progress.**
 
 This repository contains the definitive paper and theoretical formulation for the **Quantum Constraint Framework (QCF)** at spacetime singularities, introducing the postulate of **Isomorphic Cosmic Equilibrium (ICE)**.
 
@@ -22,27 +22,23 @@ By enforcing this informational speed limit, the geometry is forced to "cap off"
 
 ---
 
-## Abstract
+## Core Postulate
 
-General Relativity predicts curvature divergence as $r \to 0$ in spherically symmetric spacetimes, while quantum unitarity forbids non-unitary loss of information. We propose the Quantum Constraint Framework (QCF), wherein the Schwarzschild radius $r_s$ acts as a thermodynamic interface. Spacetime curvature at the horizon is sourced by the coarse-grained von Neumann entropy of horizon-localized modes. The Einstein tensor at the boundary is identified with an effective quantum surface stress $\Sigma_{\mu\nu}^{QM}$ enforcing the Bekenstein entropy bound. Saturation of this informational bound yields a universal, finite curvature ceiling $K_{max} = 1/16$ in Planck units, dynamically inducing an interior spatial cutoff $r_{cut} \propto r_s^{1/3}$. 
+**∑GR = ∑QM** — at the Schwarzschild radius $r_s$, the classical Einstein tensor is sourced by quantum entropic stress:
 
-This framework resolves the central singularity without altering standard external General Relativity for macroscopic black holes, offering concrete testable scaling signatures for primordial black holes (PBHs).
+$$G_{\mu\nu}(r_s) \equiv \Sigma_{\mu\nu}^{QM}$$
 
-## Repository Contents
-* `QCF.pdf` - The complete, comprehensive research paper containing full theoretical derivations, quantitative scaling tables, and phenomenology.
+Spacetime curvature at the horizon is sourced by the coarse-grained von Neumann entropy of horizon-localized modes. The Einstein tensor at the boundary is identified with an effective quantum surface stress $\Sigma_{\mu\nu}^{QM}$ enforcing the Bekenstein entropy bound.
 
-## Citation
+Saturation of this informational bound yields the universal curvature ceiling $K_{max} = 1/16$ in Planck units, dynamically inducing an interior spatial cutoff:
 
-If you reference this framework or incorporate its thermodynamic boundary constraints into your research, please cite the work as follows:
+**$$r_{cut} \propto r_s^{1/3}$$**
 
-### BibTeX
-```bibtex
-@misc{rodger2026qcf,
-  author       = {Rodger, Andrew},
-  title        = {Quantum Constraint Framework at Spacetime Singularities: A Postulate of Isomorphic Cosmic Equilibrium},
-  month        = jun,
-  year         = 2026,
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.20576794},
-  url          = {[https://doi.org/10.5281/zenodo.20576794](https://doi.org/10.5281/zenodo.20576794)}
-}
+This framework resolves the central singularity without altering standard external General Relativity for macroscopic black holes, offering concrete, testable scaling signatures for primordial black holes (PBHs).
+
+## Known Limitations (V1.0)
+- Interior metric does not yet satisfy full regularity at $r = r_{cut}$ (derivative discontinuity)
+- PBH mass spectrum calculation uses first-order approximation only
+- No coupling to Standard Model fields yet
+
+V2 will address regularity and provide numerical interior solution.
