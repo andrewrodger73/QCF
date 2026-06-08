@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20576794.svg)](https://doi.org/10.5281/zenodo.20576794)
 
+Status: V1.0 (June 2026) — interior regularity condition not yet satisfied. V2 in progress.
+
 This repository contains the definitive paper and theoretical formulation for the **Quantum Constraint Framework (QCF)** at spacetime singularities, introducing the postulate of **Isomorphic Cosmic Equilibrium (ICE)**.
 
 ---
