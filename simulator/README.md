@@ -13,7 +13,7 @@ This release reproduces the four validation figures:
 ## Run
 ```
 pip install -r requirements.txt
-python QCF_simulation.py
+python QCF_v2_sim.py
 ```
 All figures appear and save to `results/`.
 
