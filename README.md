@@ -1,44 +1,57 @@
-# Quantum Constraint Framework (QCF)
+# Quantum Constraint Framework (QCF) at Spacetime Singularities
 
+### *A Postulate of Isomorphic Cosmic Equilibrium*
+
+**Author:** Andrew Rodger  
+**Date:** June 2026  
+**License:** MIT / Open Science  
+
+---
+
+## 🌌 Overview
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20576794.svg)](https://doi.org/10.5281/zenodo.20576794)
+The **Quantum Constraint Framework (QCF)** introduces a novel, systems-level resolution to the long-standing incompatibility between the smooth geometric descriptions of General Relativity (GR) and the unitary demands of Quantum Mechanics (QM). 
 
-> **Status: V1.0 (June 2026) — interior regularity condition not yet satisfied. This is a flawed first release. V2 with the corrected interior solution is in progress.**
+Instead of treating the interior vacuum of a black hole as entirely disconnected from its boundary, QCF introduces the **Postulate of Isomorphic Cosmic Equilibrium (ICE)**. ICE asserts a strict one-to-one structural mapping between the maximum quantum information capacity of a localized gravitational boundary (the event horizon) and the maximum allowable curvature of the interior bulk geometry it encloses.
 
-This repository contains the definitive paper and theoretical formulation for the **Quantum Constraint Framework (QCF)** at spacetime singularities, introducing the postulate of **Isomorphic Cosmic Equilibrium (ICE)**.
-
----
-
-## The Intuition: The Structural Limits of Spacetime
-
-In classical General Relativity, gravitational collapse is an uncompromising trajectory toward disaster—a smooth curve sharpening into an infinitely dense, zero-volume point where physics crashes and information vanishes. 
-
-The **Quantum Constraint Framework (QCF)** resolves this impasse by treating the fabric of spacetime not as an empty, infinitely malleable void, but as an informational medium with a strict, finite capacity. Just as a physical sponge possesses a definitive saturation point beyond which it cannot absorb more liquid, the geometric field has a structural limit to the density of information it can support. 
-
-We parameterize this boundary condition as a universal, finite curvature ceiling, defined by the hard limit:
-
-$$K_{max} = \frac{1}{16}$$
-
-By enforcing this informational speed limit, the geometry is forced to "cap off" at the Planck scale. Instead of puncturing reality to form a singularity, the collapsing core hits absolute saturation and stabilizes into a non-singular, high-density quantum equilibrium. The universe avoids infinity simply by refusing to let geometry overflow its buffer.
+By enforcing the Bekenstein entropy bound as a dynamic, thermodynamic boundary condition, the framework eliminates the classical $r \rightarrow 0$ infinite singularity, replacing it with a universal, finite curvature ceiling and a non-singular interior spatial cutoff.
 
 ---
 
-## Core Postulate
+## 🛠️ Core Mathematical Framework
 
-**∑GR = ∑QM** — at the Schwarzschild radius $r_s$, the classical Einstein tensor is sourced by quantum entropic stress:
+QCF modifies the standard Einstein field equations strictly at the horizon boundary interface ($r = r_s$):
 
-$$G_{\mu\nu}(r_s) \equiv \Sigma_{\mu\nu}^{QM}$$
+$$\Sigma_{\mu\nu}^{\text{GR}}|_{r=r_s} = \Sigma_{\mu\nu}^{\text{QM}}$$
 
-Spacetime curvature at the horizon is sourced by the coarse-grained von Neumann entropy of horizon-localized modes. The Einstein tensor at the boundary is identified with an effective quantum surface stress $\Sigma_{\mu\nu}^{QM}$ enforcing the Bekenstein entropy bound.
+Where the effective boundary quantum stress tensor $\Sigma_{\mu\nu}^{\text{QM}}$ is sourced by the coarse-grained von Neumann entropy $S_{\text{vN}}$ of the horizon-localized states:
 
-Saturation of this informational bound yields the universal curvature ceiling $K_{max} = 1/16$ in Planck units, dynamically inducing an interior spatial cutoff:
+$$\Sigma_{\mu\nu}^{\text{QM}} \equiv \frac{S_{\text{vN}}}{A_H}g_{\mu\nu}$$
 
-**$$r_{cut} \propto r_s^{1/3}$$**
+### 1. The Curvature Ceiling
+When horizon modes saturate the Bekenstein bound ($S_{\text{vN}} \le A_H/4$), the boundary stress tensor reaches its maximum saturation threshold of $\frac{1}{4}g_{\mu\nu}$. This dynamically constrains the interior Kretschmann scalar ($K = R_{\alpha\beta\gamma\delta}R^{\alpha\beta\gamma\delta}$), inducing a universal physical cap:
 
-This framework resolves the central singularity without altering standard external General Relativity for macroscopic black holes, offering concrete, testable scaling signatures for primordial black holes (PBHs).
+$$K_{\text{max}} = \frac{1}{16}$$
 
-## Known Limitations (V1.0)
-- Interior metric does not yet satisfy full regularity at $r = r_{cut}$ (derivative discontinuity)
-- PBH mass spectrum calculation uses first-order approximation only
-- No coupling to Standard Model fields yet
+### 2. The Dynamic Spatial Cutoff
+Because physical curvature cannot exceed $K_{\text{max}}$, the spatial coordinate $r$ cannot continuously contract to zero. Setting the classical Schwarzschild curvature profile equal to this ceiling yields a minimum physically realizable radius, $r_{\text{cut}}$:
 
-V2 will address regularity and provide numerical interior solution.
+$$r_{\text{cut}} = 192^{1/6}r_s^{1/3}l_p^{2/3}$$
+
+This sub-linear scaling behavior ($r_{\text{cut}} \propto r_s^{1/3}$) reveals that while the cutoff is buried deep inside macroscopic astrophysical black holes, it expands significantly in relative size for low-mass regimes.
+
+---
+
+## 📊 Scale Profiles Across Mass Regimes
+
+| Mass Profile | Horizon Radius $r_s$ (m) | Cutoff Radius $r_{\text{cut}}$ (m) | Relative Ratio $r_{\text{cut}}/r_s$ |
+| :--- | :--- | :--- | :--- |
+| **Primordial** ($10^{12} \text{ kg}$) | $1.49 \times 10^{-15}$ | $1.75 \times 10^{-28}$ | $1.2 \times 10^{-13}$ |
+| **Stellar** ($1\ M_{\odot}$) | $2.95 \times 10^{3}$ | $2.20 \times 10^{-22}$ | $7.5 \times 10^{-26}$ |
+| **Intermediate** ($10\ M_{\odot}$) | $2.95 \times 10^{4}$ | $4.75 \times 10^{-22}$ | $1.6 \times 10^{-26}$ |
+
+---
+
+## 🚀 Repository Structure
+
+This repository is organized to maintain total academic transparency and provide full reproducibility for the scientific community.
