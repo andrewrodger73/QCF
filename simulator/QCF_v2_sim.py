@@ -58,4 +58,4 @@ plt.axvline(rc/rs,c='r',ls=':'); plt.axhline(1,c='k',lw=1); plt.xlabel('r/r_s');
 plt.title('Solar-mass curvature ceiling'); plt.legend(); plt.grid(True,which='both',alpha=0.3)
 plt.tight_layout(); plt.savefig('results/Fig4_KKmax.png',dpi=150); plt.show()
 
-print('QCF v1.0 complete - 4 figures saved')
+print('QCF v2.0.0 complete - 4 figures saved')
