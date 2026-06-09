@@ -6,9 +6,9 @@ authors:
   - family-names: "Rodger"
     given-names: "Andrew"
     orcid: "https://orcid.org/0009-0002-9897-2635"
-version: "1.0"
-date-released: "2026-06-08"
-doi: "10.5281/zenodo.20576794"
+version: "2.0.0"
+date-released: "2026-06-09"
+doi: "10.5281/zenodo.20615629"
 repository-code: "https://github.com/andrewrodger73/QCF"
 license: "MIT"
 keywords:
