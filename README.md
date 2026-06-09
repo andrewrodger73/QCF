@@ -10,6 +10,7 @@
 
 ## 🌌 Overview
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20576794.svg)](https://doi.org/10.5281/zenodo.20576794)
+
 The **Quantum Constraint Framework (QCF)** introduces a novel, systems-level resolution to the long-standing incompatibility between the smooth geometric descriptions of General Relativity (GR) and the unitary demands of Quantum Mechanics (QM). 
 
 Instead of treating the interior vacuum of a black hole as entirely disconnected from its boundary, QCF introduces the **Postulate of Isomorphic Cosmic Equilibrium (ICE)**. ICE asserts a strict one-to-one structural mapping between the maximum quantum information capacity of a localized gravitational boundary (the event horizon) and the maximum allowable curvature of the interior bulk geometry it encloses.
