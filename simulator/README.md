@@ -1,5 +1,5 @@
 
-# Quantum Coherence Framework (QCF) — v1.0
+# Quantum Coherence Framework (QCF) — v2.0.0
 
 **Core claim:** Σ^GR = Σ^QM ⇒ K_max = 1/(16 l_p^4), r_cut = 192^{1/6} r_s^{1/3} l_p^{2/3}
 
