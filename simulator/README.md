@@ -48,13 +48,12 @@ Ensure your scientific Python environment has the baseline plotting and numerica
 pip install numpy matplotlib
 ```
 
-## Run
+### 2. Run the Engine
 To fire the consolidated simulation suite and calculate all thermodynamic properties, spectral profiles, perturbation curves, and interior metrics:
 
 ```bash
 python QCF_v2_sim.py
 ```
-* All 6 figures will automatically compile, format, and save directly to the results/ directory.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
