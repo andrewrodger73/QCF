@@ -1,81 +1,60 @@
-# Quantum Constraint Framework (QCF) — v2.0.0
-### Mathematical Core & Consolidated Cosmological Simulators
+# QCF Simulation Engine (v2.0.0)
 
-A long-standing crisis in modern theoretical physics is the incompatibility between the smooth geometric description of general relativity (GR) and the unitary demands of quantum mechanics (QM). At the core of a classical black hole, the Schwarzschild metric drives the Kretschmann scalar ($K$) to infinity, yielding an illegal physical singularity where predictability breaks down completely.
-
-The Quantum Constraint Framework (QCF) resolves this breakdown via the Postulate of Isomorphic Cosmic Equilibrium (ICE). ICE asserts a one-to-one structural mapping between the maximum quantum information capacity of a localized gravitational boundary and the maximum allowable curvature of the interior bulk geometry it encloses. 
-
-By identifying the Einstein tensor at the horizon boundary interface ($r = r_s$) with an effective quantum surface stress tensor ($\Sigma_{\mu\nu}^{\text{QM}}$) that enforces the Bekenstein entropy bound, the interior curvature encounters a universal, finite saturation ceiling:
-
-$$K_{\text{max}} = \frac{1}{16 l_p^4}, \quad r_{\text{cut}} = 192^{1/6} r_s^{1/3} l_p^{2/3}$$
+This repository contains the core computational engine for the Quantum Constraint Framework (QCF). The script evaluates macroscopic thermodynamic properties, phenomenological boundaries, and interior geometric limits to simulate black hole behavior under a universal curvature ceiling.
 
 ---
 
-## Repository Architecture
+## Script Architecture (`QCF_v2_sim.py`)
 
-The core code engine runs a unified diagnostic simulation suite encompassing two synchronized computational modules:
-1. Module 1: Global Validation Suite — Evaluates macroscopic thermodynamic properties, integrated graybody power fractions, continuous emission spectra, and direct scaling transformations for observational boundary tracking.
-2. Module 2: Interior Collapse Simulator — Tracks dynamic metric truncation, mapping the abrupt geometric "circuit breaker" directly against classical trajectories as $r \rightarrow 0$.
+The simulation engine is structured around two distinct operational components executed in a single sequential sweep:
 
----
-
-## Simulation Profiles & Outputs
-
-All generated visual assets are compiled, rendered, and saved directly into the unified results directory:
-
-### Module 1: Global Validation & Phenomenological Bounds
-* results/Fig1_Emax.png (Energy Bounds): Evaluates maximum informational energy thresholds ($E_{\text{max}}$) as a function of mass, illustrating the exact sub-linear $M^{-1/3}$ power law crossing the orange Fermi-LAT observational constraint band.
-* results/Fig2_lifetime.png (Evaporation Lifetimes): Compares QCF evaporation models against semiclassical Hawking lifetimes. Demonstrates precise correspondence principle alignment where QCF variations lie perfectly flush on top of standard GR lines for astronomical bodies.
-* results/Fig3_spectrum.png (Spectral Signatures): Visualizes the continuous graybody emission profile for a primordial black hole ($M = 5 \times 10^{11}\text{ kg}$), showcasing the sharp high-frequency truncation cliff induced by the information cutoff boundary.
-* results/Fig4_KKmax.png (Horizon Curvature Profiles): Tracks the invariant dimensionless curvature ratio $K/K_{\text{max}}$ across a solar-mass horizon, showing the classical GR transition safely flattening into the invariant saturation plateau.
-* results/Fig6_QCF_predictions.png (Fractional Boundary Corrections): Maps the precise mathematical scaling profiles derived in Section 6 of the paper over an expansive mass sweep ($10^{9}\text{ kg}$ to $10^{31}\text{ kg}$), highlighting both the Hawking temperature correction and the Quasi-Normal Mode (QNM) ringdown perturbation shifts:
-
-$$\frac{\Delta T_H}{T_H} \simeq \frac{l_p^2}{A_H}, \quad \frac{\delta\omega}{\omega} \sim \left(\frac{l_p}{r_s}\right)^{4/3}$$
-
-### Module 2: Interior Collapse Simulator
-* results/Fig5_Kretschmann_Truncation.png (Singularity Elimination): Maps the spatial collapse profile of internal matter moving through the horizon toward $r \rightarrow 0$. Following Section 5 of the text, this plot reflects a strict abrupt geometric truncation at the spatial boundary without assuming ad-hoc internal fluid regularizations.
-
-           K(r) ^
-                |      /  [Classical Singularity Extrapolates to Infinity]
-                |     / :
-        K_max --|----+  :  <-- QCF Circuit Breaker Triggers at r_cut
-     (1/16)     |    |  : 
-                |____|__:_________________> r
-                0   r_cut
+1. **Global Validation Engine**: Tracks mass sweeps ($10^9 \text{ kg}$ to $10^{31} \text{ kg}$) to calculate informational energy bounds, standard vs. QCF lifetimes, graybody spectral distributions, and formal boundary corrections ($\Delta T_H/T_H$ and $\delta\omega/\omega$).
+2. **Interior Collapse Simulator**: Models a normalized geometric profile ($r_s = 2.0$) of matter falling inward toward $r \rightarrow 0$ to demonstrate the abrupt geometric "circuit breaker" mechanism that truncates the classical singularity.
 
 ---
 
-## Quantitative Scaling Profiles
+## Core Invariants & Physics Logic
 
-Because $r_{\text{cut}}$ scales sub-linearly relative to the horizon radius ($r_{\text{cut}} \propto r_s^{1/3}$), the framework naturally explains why classical GR remains an exceptional effective field theory for massive astronomical bodies, while resolving structural infinities at micro-scales:
+The script applies the framework's mathematical boundaries natively using SI units:
 
-* Primordial ($10^{12}\text{ kg}$) | Horizon Radius: $\sim 1.48 \times 10^{-15}\text{ m}$ | Cutoff Radius: $\sim 1.75 \times 10^{-28}\text{ m}$
-* Stellar ($1\text{ M}_{\odot}$)     | Horizon Radius: $\sim 2.95 \times 10^3\text{ m}$  | Cutoff Radius: $\sim 2.20 \times 10^{-22}\text{ m}$
-* Intermediate ($10\text{ M}_{\odot}$)| Horizon Radius: $\sim 2.95 \times 10^4\text{ m}$  | Cutoff Radius: $\sim 4.75 \times 10^{-22}\text{ m}$
+* **Curvature Ceiling ($K_{\text{max}}$)**: Enforces an absolute upper bound on the Kretschmann scalar based on the Planck length:
+  $$K_{\text{max}} = \frac{1}{16 l_p^4}$$
+* **Spatial Cutoff ($r_{\text{cut}}$)**: Computes the sub-linear coordinate boundary where the curvature ceiling takes effect:
+  $$r_{\text{cut}} = 192^{1/6} r_s^{1/3} l_p^{2/3}$$
+* **Section 6 Boundary Deviations**: Evaluates the ultra-small fractional corrections derived for the Hawking temperature and Quasi-Normal Mode (QNM) ringdown frequencies:
+  $$\frac{\Delta T_H}{T_H} \simeq \frac{l_p^2}{A_H}, \quad \frac{\delta\omega}{\omega} \sim \left(\frac{l_p}{r_s}\right)^{4/3}$$
 
 ---
+
+## Generated Visual Assets
+
+Running the script automatically compiles and renders 6 publication-grade figures into the `results/` directory:
+
+* **`Fig1_Emax.png`**: Plots the maximum informational energy threshold ($E_{\text{max}} \propto M^{-1/3}$) against a background overlay of the Fermi-LAT observational energy band ($10^8$ to $10^{11} \text{ eV}$).
+* **`Fig2_lifetime.png`**: Validates the semiclassical correspondence principle, showing that QCF lifetime paths perfectly track standard GR lines for macroscopic masses.
+* **`Fig3_spectrum.png`**: Evaluates the continuous graybody emission profile for a $5 \times 10^{11} \text{ kg}$ primordial black hole under a hard high-frequency truncation cliff.
+* **`Fig4_KKmax.png`**: Maps the dimensionless $K/K_{\text{max}}$ ratio across a solar-mass horizon, showing where the continuum limit flattens into an invariant plateau.
+* **`Fig5_Kretschmann_Truncation.png`**: Visualizes internal spatial collapse. It highlights the sharp, abrupt geometric truncation at $r_{\text{cut}}$ and excludes any ad-hoc smooth internal fluid core model.
+* **`Fig6_QCF_predictions.png`**: Evaluates the explicit fractional corrections from Section 6 over a broad mass domain, inserting markers for $1 \text{ M}_{\odot}$ and $10^{12} \text{ kg}$ boundaries.
+
+---
+
+## Execution Guide
+
+### 1. Setup Dependencies
+Ensure your scientific Python environment has the baseline plotting and numerical packages installed:
+
+```bash
+pip install numpy matplotlib
+```
 
 ## Run
-
-### Setup Dependencies
-Install the required scientific stack via the project package manager:
-
-    $ pip install -r requirements.txt
-
-### Execution
 To fire the consolidated simulation suite and calculate all thermodynamic properties, spectral profiles, perturbation curves, and interior metrics:
 
-    $ python QCF_v2_sim.py
-
+```bash
+python QCF_v2_sim.py
+```
 * All 6 figures will automatically compile, format, and save directly to the results/ directory.
-
----
-
-## Scholarly Context
-
-Unlike standard phenomenological models that manually inject an ad-hoc fluid de Sitter core inside the horizon metric, QCF requires no exotic internal stress-energy fluid assumptions. The interior spatial truncation arises purely as a dynamic consequence of informational saturation at the event horizon interface. 
-
-Furthermore, because the mechanism enforces a strict geometric truncation as $r \rightarrow 0$, the framework offers a novel paradigm for resolving primordial singularities without relying on ad-hoc internal fluid infrastructures. Applied to early-universe cosmology at $t = 0$, this invariant ceiling establishes a mathematical basis for mitigating the Big Bang singularity, replacing it with an abrupt, non-singular cosmic bounce driven purely by boundary information saturation.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
