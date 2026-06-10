@@ -13,24 +13,27 @@ $$K_{\text{max}} = \frac{1}{16 l_p^4}, \quad r_{\text{cut}} = 192^{1/6} r_s^{1/3
 
 ## Repository Architecture
 
-The core code engine runs a unified diagnostic simulation suite encompassing two synchronized modules:
-1. Module 1: Global Validation Suite — Evaluates macroscopic thermodynamic properties, integrated graybody power fractions, emission spectra, and phenomenological bounds.
-2. Module 2: Interior Collapse Simulator — Tracks dynamic metric truncation, mapping both abrupt and smooth algebraic core regularizations directly against classical trajectories.
+The core code engine runs a unified diagnostic simulation suite encompassing two synchronized computational modules:
+1. Module 1: Global Validation Suite — Evaluates macroscopic thermodynamic properties, integrated graybody power fractions, continuous emission spectra, and direct scaling transformations for observational boundary tracking.
+2. Module 2: Interior Collapse Simulator — Tracks dynamic metric truncation, mapping the abrupt geometric "circuit breaker" directly against classical trajectories as $r \rightarrow 0$.
 
 ---
 
 ## Simulation Profiles & Outputs
 
-All generated visual assets are compiled, rendered, and saved directly into a single consolidated directory:
+All generated visual assets are compiled, rendered, and saved directly into the unified results directory:
 
-### Module 1: Global Validation Suite
+### Module 1: Global Validation & Phenomenological Bounds
 * results/Fig1_Emax.png (Energy Bounds): Evaluates maximum informational energy thresholds ($E_{\text{max}}$) as a function of mass, illustrating the exact sub-linear $M^{-1/3}$ power law crossing the orange Fermi-LAT observational constraint band.
 * results/Fig2_lifetime.png (Evaporation Lifetimes): Compares QCF evaporation models against semiclassical Hawking lifetimes. Demonstrates precise correspondence principle alignment where QCF variations lie perfectly flush on top of standard GR lines for astronomical bodies.
 * results/Fig3_spectrum.png (Spectral Signatures): Visualizes the continuous graybody emission profile for a primordial black hole ($M = 5 \times 10^{11}\text{ kg}$), showcasing the sharp high-frequency truncation cliff induced by the information cutoff boundary.
 * results/Fig4_KKmax.png (Horizon Curvature Profiles): Tracks the invariant dimensionless curvature ratio $K/K_{\text{max}}$ across a solar-mass horizon, showing the classical GR transition safely flattening into the invariant saturation plateau.
+* results/Fig6_QCF_predictions.png (Fractional Boundary Corrections): Maps the precise mathematical scaling profiles derived in Section 6 of the paper over an expansive mass sweep ($10^{9}\text{ kg}$ to $10^{31}\text{ kg}$), highlighting both the Hawking temperature correction and the Quasi-Normal Mode (QNM) ringdown perturbation shifts:
+
+$$\frac{\Delta T_H}{T_H} \simeq \frac{l_p^2}{A_H}, \quad \frac{\delta\omega}{\omega} \sim \left(\frac{l_p}{r_s}\right)^{4/3}$$
 
 ### Module 2: Interior Collapse Simulator
-* results/QCF_Kretschmann_Truncation.png (Singularity Elimination): Maps the spatial collapse profile of internal matter moving through the horizon toward $r \rightarrow 0$, visually plotting the exact crossover where classical infinity is eliminated by the Planckian curvature ceiling.
+* results/Fig5_Kretschmann_Truncation.png (Singularity Elimination): Maps the spatial collapse profile of internal matter moving through the horizon toward $r \rightarrow 0$. Following Section 5 of the text, this plot reflects a strict abrupt geometric truncation at the spatial boundary without assuming ad-hoc internal fluid regularizations.
 
            K(r) ^
                 |      /  [Classical Singularity Extrapolates to Infinity]
@@ -60,11 +63,11 @@ Install the required scientific stack via the project package manager:
     $ pip install -r requirements.txt
 
 ### Execution
-To fire the consolidated simulation suite and calculate all thermodynamic properties, spectral profiles, and interior metrics:
+To fire the consolidated simulation suite and calculate all thermodynamic properties, spectral profiles, perturbation curves, and interior metrics:
 
     $ python QCF_v2_sim.py
 
-* All 5 figures will automatically compile, format, and save directly to the results/ directory.
+* All 6 figures will automatically compile, format, and save directly to the results/ directory.
 
 ---
 
