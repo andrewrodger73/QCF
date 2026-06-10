@@ -75,7 +75,7 @@ To fire the consolidated simulation suite and calculate all thermodynamic proper
 
 Unlike standard phenomenological models that manually inject an ad-hoc fluid de Sitter core inside the horizon metric, QCF requires no exotic internal stress-energy fluid assumptions. The interior spatial truncation arises purely as a dynamic consequence of informational saturation at the event horizon interface. 
 
-Furthermore, by completely eliminating the $r \rightarrow 0$ singularity, this exact scaling mechanism applies globally to the universe at $t = 0$ — mathematically replacing the Big Bang singularity with a smooth, non-singular cosmic bounce.
+Furthermore, because the mechanism enforces a strict geometric truncation as r→0, the framework offers a novel paradigm for resolving primordial singularities without relying on ad-hoc internal fluid infrastructures. Applied to early-universe cosmology at t=0, this invariant ceiling establishes a mathematical basis for mitigating the Big Bang singularity, replacing it with an abrupt, non-singular cosmic bounce driven purely by boundary information saturation.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
