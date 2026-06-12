@@ -41,6 +41,11 @@ Running the script automatically compiles and renders 6 publication-grade figure
 * **`Fig6_QCF_predictions.png`**: Evaluates the explicit fractional corrections from Section 6 over a broad mass domain, inserting markers for $1 \text{ M}_{\odot}$ and $10^{12} \text{ kg}$ boundaries.
 
 ---
+## Results from v2.0
+![E_max](results/Fig1_Emax.png)
+![lifetimes](results/Fig2_lifetime.png)
+
+---
 
 ## Execution Guide
 
