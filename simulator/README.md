@@ -1,4 +1,7 @@
 # QCF Simulation Engine (v2.0.0)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20615629.svg)](https://doi.org/10.5281/zenodo.20615629)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](QCF_v2_sim.py)
 
 This repository contains the core computational engine for the Quantum Constraint Framework (QCF). The script evaluates macroscopic thermodynamic properties, phenomenological boundaries, and interior geometric limits to simulate black hole behavior under a universal curvature ceiling.
 
