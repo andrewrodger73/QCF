@@ -9,7 +9,7 @@
 ---
 
 ## 🌌 Overview
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20615629.svg)](https://doi.org/10.5281/zenodo.20615629)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20672336.svg)](https://doi.org/10.5281/zenodo.20672336)
 
 The **Quantum Constraint Framework (QCF)** introduces a novel, systems-level resolution to the long-standing incompatibility between the smooth geometric descriptions of General Relativity (GR) and the unitary demands of Quantum Mechanics (QM). 
 
