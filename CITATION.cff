@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Quantum Constraint Framework (QCF): A Curvature Ceiling from Σ^GR = Σ^QM"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Rodger"
+    given-names: "Andrew"
+    orcid: "https://orcid.org/0009-0002-9897-2635"
+version: "4"
+date-released: "2026-06-13"
+doi: "10.5281/zenodo.20681174"
+repository-code: "https://github.com/andrewrodger73/QCF"
+license: "MIT"
+keywords:
+  - black holes
+  - quantum gravity
+  - Hawking radiation
+  - curvature
+  - PBH
